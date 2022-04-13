@@ -26,7 +26,7 @@ ENV \
 	USHARE_TELNET_PORT=1337
 
 # Configure: supervisor
-ADD supervisord.ushare.conf /etc/supervisor/conf.d/ushare.conf
+COPY supervisord.ushare.conf /etc/supervisor/conf.d/ushare.conf
 
 EXPOSE 1337/tcp 1900/udp 49200/tcp
 
