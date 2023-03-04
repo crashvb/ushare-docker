@@ -28,6 +28,9 @@ ENV \
 # Configure: supervisor
 COPY supervisord.ushare.conf /etc/supervisor/conf.d/ushare.conf
 
+# Configure: healthcheck
+COPY healthcheck.ushare /etc/healthcheck.d/ushare
+
 EXPOSE 1337/tcp 1900/udp 49200/tcp
 
 VOLUME ${USHARE_DIR}

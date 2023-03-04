@@ -13,10 +13,6 @@ This docker image contains [uShare](https://ushare.geexbox.org/).
 
 None.
 
-## Healthcheck Scripts
-
-None.
-
 ## Standard Configuration
 
 ### Container Layout
@@ -24,6 +20,8 @@ None.
 ```
 /
 ├─ etc/
+│  ├─ healthcheck.d/
+│  │  └─ ushare
 │  └─ supervisor/
 │     └─ config.d/
 │        └─ ushare.conf
